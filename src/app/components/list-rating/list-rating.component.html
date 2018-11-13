@@ -1,0 +1,39 @@
+<div class="col">
+  <h2>Evaluaciones</h2>
+  <button class="btn btn-primary" (click)="addRating()">Agregar Evaluacion</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">IdRat</th>
+        <th>Evaluador</th>
+        <th>Evaluado</th>
+        <th>Ubicacion</th>
+        <th>Precio</th>
+        <th>Servicio</th>
+        <th>Promedio</th>
+        <th>Comentario</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rating of ratings">
+        <td class="hidden">{{ rating.idRat }}</td>
+        <td>{{ rating.postedBy }}</td>
+        <td>{{ rating.ratedPlace }}</td>
+        <td>{{ rating.locationRate }}</td>
+        <td>{{ rating.priceRate }}</td>
+        <td>{{ rating.serviceRate }}</td>
+        <td>{{ rating.promRate }}</td>
+        <td>{{ rating.comment }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editRating(rating)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deleteRating(rating)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

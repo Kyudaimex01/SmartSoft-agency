@@ -1,0 +1,28 @@
+<div class="col">
+    <h2 class="text-center">Editar Cliente</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="namePlace">Nombre:</label>
+      <input formControlName="namePlace" placeholder="Nombre" name="namePlace" class="form-control" id="namePlacefirstName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="imagePlace">Imagen:</label>
+      <input formControlName="imagePlace" placeholder="Imagen" name="imagePlace" class="form-control" id="imagePlace" required>
+    </div>
+
+    <div class="form-group">
+      <label for="descPlace">Descripcion:</label>
+      <input formControlName="descPlace" placeholder="Descripcion" name="descPlace" class="form-control" id="descPlace" required>
+    </div>
+
+    <div class="form-group">
+      <label for="locationPlace">Ubicacion:</label>
+      <input formControlName="locationPlace" placeholder="Ubicacion" name="locationPlace" class="form-control" id="locationPlace" required>
+    </div>
+
+      <button class="btn btn-success">Aceptar</button>
+      <button class="btn btn-primary" routerLink="list-place">Regresar</button>
+    </form>
+  </div>

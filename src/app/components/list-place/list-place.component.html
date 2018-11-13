@@ -1,0 +1,33 @@
+<div class="col">
+  <h2>Sitios</h2>
+  <button class="btn btn-primary" (click)="addPlace()">Agregar Sitio</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id sitio</th>
+        <th>Nombre</th>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Ubicacion</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let place of places">
+        <td class="hidden">{{ place.idPlace }}</td>
+        <td>{{ place.namePlace }}</td>
+        <td>{{ place.imagePlace }}</td>
+        <td>{{ place.descPlace }}</td>
+        <td>{{ place.locationPlace }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editPlace(place)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deletePlace(place)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

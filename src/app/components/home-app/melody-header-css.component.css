@@ -1,0 +1,458 @@
+.header-popover {
+  z-index: 9999
+}
+
+.header-popover--member {
+  right: 30%
+}
+
+.siteheader--fullscreen {
+  z-index: 9999
+}
+
+@media only screen and (min-width: 480px) {
+  .siteheader__control .icon-profile {
+    margin: 0 0 -6px
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .ctest-viewer {
+    padding: 0 16px
+  }
+}
+
+.verify-email-container {
+  margin: 12px
+}
+
+.verify-email-container .alert__message {
+  margin: 12px 40px 12px 12px
+}
+
+.verify-email-container .alert__close {
+  top: 8px
+}
+
+.fs-container {
+  background-color: #fff;
+  width: 100vw;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed
+}
+
+.fs-container .siteheader__logo-link {
+  display: block
+}
+
+.fs-container__close svg {
+  -webkit-transform: scale(-1);
+  transform: scale(-1)
+}
+
+.fs-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background-color: #fff;
+  z-index: 9998;
+  width: 100vw;
+  height: 100%;
+  margin-top: 56px;
+  border-top: 1px solid #cdd0d2
+}
+
+.fs-menu--open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%
+}
+
+.fs-menu__section {
+  margin-bottom: 12px
+}
+
+.fs-menu__section:last-of-type .fs-menu__item:last-of-type {
+  border-bottom: 0
+}
+
+.fs-menu__heading {
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0
+}
+
+.header-active .fs-menu__heading {
+  display: none
+}
+
+.header-ctest-active .fs-menu__heading {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 16px
+}
+
+.header-bpg-active .fs-menu__heading {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 16px
+}
+
+.header-active .fs-menu__list {
+  border-top: 0
+}
+
+.fs-menu__item {
+  margin: 0 12px;
+  font-size: 16px;
+  border-bottom: 1px solid #ebeced
+}
+
+.fs-menu__item-arrow {
+  margin-left: 16px
+}
+
+.fs-menu__item-arrow .svg-color--primary {
+  fill: #697379
+}
+
+.in-offline-view .fs-menu__item-arrow .svg-color--primary {
+  fill: #cdd0d2
+}
+
+.fs-menu__item--hidden {
+  display: none
+}
+
+.fs-menu__item--full {
+  padding: 12px 0
+}
+
+.fs-menu__item button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.fs-menu__item .popover__controls {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end
+}
+
+.fs-menu__item .popover__label {
+  font-size: 12px
+}
+
+.fs-menu__button {
+  padding: 12px 0
+}
+
+.fs-menu__button:focus {
+  outline: 1px solid rgba(55, 69, 77, .75)
+}
+
+@supports (outline-offset:0) {
+  .fs-menu__button:focus {
+    outline: 1px dotted #37454d;
+    outline-offset: 0
+  }
+}
+
+.fs-menu__text {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between
+}
+
+.in-offline-view .fs-menu__text {
+  color: #cdd0d2
+}
+
+.fs-menu__preference {
+  padding: 0 12px;
+  font-size: 16px;
+  cursor: pointer
+}
+
+.fs-menu__preference.active, .fs-menu__preference:active, .fs-menu__preference:focus, .fs-menu__preference:hover {
+  background-color: #ebeced
+}
+
+.fs-menu__preference--chosen {
+  display: -webkit-flex;
+  display: flex;
+  padding: 0;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  color: #697379
+}
+
+.fs-menu__preference--chosen.active, .fs-menu__preference--chosen:active, .fs-menu__preference--chosen:focus, .fs-menu__preference--chosen:hover {
+  background-color: transparent
+}
+
+.in-offline-view .fs-menu__preference--chosen {
+  color: #cdd0d2
+}
+
+.fs-menu__preference--active {
+  background-color: #ebeced;
+  pointer-events: none
+}
+
+.fs-menu__preference-link {
+  color: #37454d
+}
+
+.fs-menu__sorting {
+  padding: 12px;
+  background-color: #9ba2a6
+}
+
+.fs-menu__sorting-input {
+  background-color: #fff;
+  min-width: 230px
+}
+
+.fs-menu__sorting .input-icon__icon {
+  width: 16px;
+  height: 16px
+}
+
+.fs-menu__sorting .icon-ic > svg {
+  width: 16px;
+  height: 16px
+}
+
+.fs-menu__sorting .icon-ic .svg-color--primary {
+  fill: #9ba2a6
+}
+
+.fs-menu__sorting .icon-ic .svg-color--secondary {
+  stroke: #9ba2a6
+}
+
+.fs-menu__country-flag {
+  margin-right: 8px
+}
+
+.fs-open {
+  overflow: hidden;
+  height: 100%;
+  position: fixed
+}
+
+.benefit {
+  padding: 12px;
+  background: #bfdfea
+}
+
+.popover .benefit {
+  border: 1px solid #7fbfd6;
+  border-radius: 2px;
+  margin: 0 8px 8px
+}
+
+.benefit__heading {
+  font-weight: 700;
+  font-size: 16px
+}
+
+.benefit-list {
+  font-size: 14px;
+  margin: 8px 0 8px 8px
+}
+
+.benefit-list__item {
+  margin-bottom: 4px
+}
+
+.benefit-list__icon {
+  margin-right: 8px
+}
+
+.loading-list {
+  margin: 16px auto;
+  width: calc(100vw - 12px);
+  height: 140px;
+  background-repeat: repeat-y;
+  -webkit-animation: shine 1s infinite;
+  animation: shine 1s infinite;
+  background-image: -webkit-linear-gradient(350deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .5) 50%, hsla(0, 0%, 100%, 0) 80%), -webkit-linear-gradient(#ebeced 18px, transparent 0), -webkit-linear-gradient(#ebeced 18px, transparent 0), -webkit-linear-gradient(#ebeced 18px, transparent 0), -webkit-linear-gradient(#ebeced 18px, transparent 0);
+  background-image: linear-gradient(100deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .5) 50%, hsla(0, 0%, 100%, 0) 80%), linear-gradient(#ebeced 18px, transparent 0), linear-gradient(#ebeced 18px, transparent 0), linear-gradient(#ebeced 18px, transparent 0), linear-gradient(#ebeced 18px, transparent 0);
+  background-size: 25vw 180px, 18vw 140px, 82vw 140px, 53vw 140px, 60vw 140px;
+  background-position: 0 0, 0 0, 0 40px, 0 80px, 0 120px
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 100% 0, 0 0, 0 40px, 0 80px, 0 120px, 0 140px
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0, 0 0, 0 40px, 0 80px, 0 120px, 0 140px
+  }
+}
+
+.input--text-ctest {
+  background-color: #fff;
+  margin: 0 0 8px 2px
+}
+
+.will-animate {
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s
+}
+
+.swipe-out-of-view {
+  -webkit-transform: translateX(101%);
+  transform: translateX(101%)
+}
+
+.swipe-into-view-left {
+  -webkit-transform: none;
+  transform: none
+}
+
+.will-scale {
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  max-height: 100vh
+}
+
+.scale {
+  -webkit-transform: scale(.85) translate3d(25px, -50px, 0);
+  transform: scale(.85) translate3d(25px, -50px, 0)
+}
+
+.scale.fs-menu--active {
+  -webkit-transform: none;
+  transform: none
+}
+
+@media only screen and (min-width: 480px) {
+  .fs-menu {
+    margin-top: 64px
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .fs-menu--active {
+    width: 50vw;
+    -webkit-transform: none;
+    transform: none;
+    border-right: 1px solid #cdd0d2
+  }
+
+  .fs-menu--active-sub {
+    width: 50vw;
+    right: 0;
+    left: auto;
+    background-color: #ebeced;
+    padding: 16px
+  }
+
+  .fs-menu--active-sub .fs-menu__section {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(41, 51, 57, .5)
+  }
+
+  .loading-list {
+    width: calc(100% - 12px)
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .fs-container {
+    display: none
+  }
+
+  .fs-menu__section {
+    margin-bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column
+  }
+
+  .header-ctest-active .fs-menu__heading {
+    padding: 16px 16px 0
+  }
+
+  .header-bpg-active .fs-menu__heading {
+    padding: 16px 16px 0
+  }
+
+  .fs-menu__list {
+    padding: 4px;
+    z-index: 4
+  }
+
+  .fs-menu__item {
+    margin: 0;
+    font-size: 14px;
+    height: 44px;
+    display: -webkit-flex;
+    display: flex
+  }
+
+  .fs-menu__item:hover {
+    background-color: #ebeced
+  }
+
+  .fs-menu__item:last-of-type {
+    border-bottom: 0
+  }
+
+  .fs-menu__item--full {
+    min-height: 44px;
+    height: auto
+  }
+
+  .in-offline-view .fs-menu__item {
+    pointer-events: none
+  }
+
+  .fs-menu__button {
+    padding: 0 16px
+  }
+
+  .in-offline-view .fs-menu__button {
+    color: #cdd0d2
+  }
+
+  .scale {
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .fs-menu__section--ctest-activation {
+    background-color: #e5f2f6;
+    padding: 8px 0
+  }
+}

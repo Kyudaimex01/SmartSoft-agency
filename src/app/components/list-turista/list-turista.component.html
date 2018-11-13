@@ -1,0 +1,37 @@
+<div class="col">
+  <h2>Clientes</h2>
+  <button class="btn btn-primary" (click)="addTurista()">Agregar Cliente</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Contraseña</th>
+        <th>Fecha Nac</th>
+        <th>Telefono</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let turista of turistas">
+        <td class="hidden">{{ turista.id }}</td>
+        <td>{{ turista.name }}</td>
+        <td>{{ turista.lastName }}</td>
+        <td>{{ turista.email }}</td>
+        <td>{{ turista.password }}</td>
+        <td>{{ turista.birthDate }}</td>
+        <td>{{ turista.phone }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editTurista(turista)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deleteTurista(turista)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
